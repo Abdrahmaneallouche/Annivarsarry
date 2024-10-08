@@ -1,0 +1,59 @@
+.glass{
+  /* From https://css.glass */
+background: rgba(224, 16, 210, 0.475);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(239, 16, 175, 0.3);
+}
+.textShadow{
+  text-shadow: 0 0  3px white;
+}
+.hide{
+  display: none;
+}
+.images{
+  background-size:  100% 100%;
+  animation: slide 50s linear infinite;
+}
+@keyframes slide {
+  0%{background-image: url('image/PIC1.jpg');}
+  5%{background-image: url('image/PIC2.jpg');}
+  10%{background-image: url('image/PIC3.jpg');}
+  15%{background-image: url('image/PIC4.jpg');}
+  20%{background-image: url('image/PIC5.jpg');}
+  25%{background-image: url('image/PIC6.jpg');}
+  30%{background-image: url('image/PIC7.jpg');}
+  35%{background-image: url('image/PIC8.jpg');}
+  40%{background-image: url('image/PIC9.jpg');}
+  45%{background-image: url('image/PIC10.jpg');}
+  50%{background-image: url('image/PIC11.jpg');}
+  55%{background-image: url('image/PIC12.jpg');}
+  60%{background-image: url('image/PIC13.jpg');}
+  65%{background-image: url('image/PIC14.jpg');}
+  70%{background-image: url('image/PIC15.jpg');}
+  75%{background-image: url('image/PIC16.jpg');}
+  80%{background-image: url('image/PIC17.jpg');}
+  85%{background-image: url('image/PIC18.jpg');}
+  90%{background-image: url('image/PIC19.jpg');}
+  95%{background-image: url('image/PIC20.jpg');}
+  100%{background-image: url('image/PIC21.jpg');}
+}
+#textContainer {
+ 
+  transition: opacity 0.5s ease;
+}
+.show{
+  display: block;
+  opacity: 1;
+  transition: all 0.5;
+}
+.page{
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease;
+}
+
+.page.active {
+  opacity: 1; /* Visible when active */
+}
